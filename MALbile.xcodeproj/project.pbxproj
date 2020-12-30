@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E55DEB43C9A438013575F2B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A421DA5DD0D3713389DF8C79 /* libPods.a */; };
+		FB298D6419E7548D004FB967 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB298D6319E7548D004FB967 /* Foundation.framework */; };
+		FB298D6619E7548D004FB967 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB298D6519E7548D004FB967 /* CoreGraphics.framework */; };
+		FB298D6819E7548D004FB967 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB298D6719E7548D004FB967 /* UIKit.framework */; };
+		FB298D6E19E7548D004FB967 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB298D6C19E7548D004FB967 /* InfoPlist.strings */; };
+		FB298D7019E7548D004FB967 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB298D6F19E7548D004FB967 /* main.m */; };
+		FB298D7419E7548D004FB967 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB298D7319E7548D004FB967 /* AppDelegate.m */; };
+		FB298D7719E7548D004FB967 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB298D7519E7548D004FB967 /* Main.storyboard */; };
+		FB298D7C19E7548D004FB967 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB298D7B19E7548D004FB967 /* Images.xcassets */; };
+		FB298D8319E7548E004FB967 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB298D8219E7548E004FB967 /* XCTest.framework */; };
+		FB298D8419E7548E004FB967 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB298D6319E7548D004FB967 /* Foundation.framework */; };
+		FB298D8519E7548E004FB967 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB298D6719E7548D004FB967 /* UIKit.framework */; };
+		FB298D8D19E7548E004FB967 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB298D8B19E7548E004FB967 /* InfoPlist.strings */; };
+		FB298D8F19E7548E004FB967 /* MALbileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB298D8E19E7548E004FB967 /* MALbileTests.m */; };
+		FB4087E219EAC09900713A44 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4087E119EAC09900713A44 /* LoginViewController.m */; };
+		FB68091419F4251A00B8EC75 /* NSDictionary+mangas.m in Sources */ = {isa = PBXBuildFile; fileRef = FB68091319F4251A00B8EC75 /* NSDictionary+mangas.m */; };
+		FB68091719F42E0200B8EC75 /* MangaListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB68091619F42E0200B8EC75 /* MangaListTableViewCell.m */; };
+		FB68091A19F42FC700B8EC75 /* MangaListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB68091919F42FC700B8EC75 /* MangaListTableViewController.m */; };
+		FB68091D19F43D3700B8EC75 /* MangaDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB68091C19F43D3700B8EC75 /* MangaDetailTableViewController.m */; };
+		FB90D50219EAC9C6004C8E1D /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB90D50119EAC9C6004C8E1D /* SplashViewController.m */; };
+		FB94004B19F86196002A7F3E /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB94004A19F86196002A7F3E /* SearchViewController.m */; };
+		FB94004E19F8673D002A7F3E /* NSDictionary+search.m in Sources */ = {isa = PBXBuildFile; fileRef = FB94004D19F8673D002A7F3E /* NSDictionary+search.m */; };
+		FBA4272419F2E28A001B4BE4 /* StatusTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA4272319F2E28A001B4BE4 /* StatusTableViewController.m */; };
+		FBA48CFC19EB4D5600AA0CDD /* NSDictionary+package.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA48CFB19EB4D5600AA0CDD /* NSDictionary+package.m */; };
+		FBA48CFF19EB55EC00AA0CDD /* AnimeDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA48CFE19EB55EC00AA0CDD /* AnimeDetailTableViewController.m */; };
+		FBA6280619EB1D1F00F1414D /* AnimeListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA6280519EB1D1F00F1414D /* AnimeListTableViewController.m */; };
+		FBA6280919EB1E7900F1414D /* AnimeListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA6280819EB1E7900F1414D /* AnimeListTableViewCell.m */; };
+		FBA6281319EB38EF00F1414D /* NSDictionary+animes.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA6281219EB38EF00F1414D /* NSDictionary+animes.m */; };
+		FBA7C43719FAF649006585C2 /* SearchTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7C43619FAF649006585C2 /* SearchTabBarController.m */; };
+		FBA7C43B19FAF770006585C2 /* AnimeSearchListController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7C43A19FAF770006585C2 /* AnimeSearchListController.m */; };
+		FBA7C43E19FAF781006585C2 /* MangaSearchListController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7C43D19FAF781006585C2 /* MangaSearchListController.m */; };
+		FBA7C44119FAFD68006585C2 /* AnimeSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7C44019FAFD68006585C2 /* AnimeSearchCell.m */; };
+		FBA7C44419FAFD78006585C2 /* MangaSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA7C44319FAFD78006585C2 /* MangaSearchCell.m */; };
+		FBF5150019E9E33F00C8B2EE /* ic_launcher-web.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF514FF19E9E33F00C8B2EE /* ic_launcher-web.png */; };
+		FBF5150419E9E51900C8B2EE /* btnLog.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF5150319E9E51900C8B2EE /* btnLog.png */; };
+		FBF5150719E9E69B00C8B2EE /* CustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5150619E9E69B00C8B2EE /* CustomSegue.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB298D8619E7548E004FB967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB298D5819E7548D004FB967 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB298D5F19E7548D004FB967;
+			remoteInfo = MALbile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		228BE3F15AA55A7AB5C9AC71 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		62994F973F4496DFB2E551C2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A421DA5DD0D3713389DF8C79 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB298D6019E7548D004FB967 /* MALbile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MALbile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB298D6319E7548D004FB967 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FB298D6519E7548D004FB967 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FB298D6719E7548D004FB967 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FB298D6B19E7548D004FB967 /* MALbile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MALbile-Info.plist"; sourceTree = "<group>"; };
+		FB298D6D19E7548D004FB967 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FB298D6F19E7548D004FB967 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB298D7119E7548D004FB967 /* MALbile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MALbile-Prefix.pch"; sourceTree = "<group>"; };
+		FB298D7219E7548D004FB967 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB298D7319E7548D004FB967 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB298D7619E7548D004FB967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB298D7B19E7548D004FB967 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FB298D8119E7548E004FB967 /* MALbileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MALbileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB298D8219E7548E004FB967 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FB298D8A19E7548E004FB967 /* MALbileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MALbileTests-Info.plist"; sourceTree = "<group>"; };
+		FB298D8C19E7548E004FB967 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FB298D8E19E7548E004FB967 /* MALbileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MALbileTests.m; sourceTree = "<group>"; };
+		FB4087E019EAC09900713A44 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FB4087E119EAC09900713A44 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FB68091219F4251A00B8EC75 /* NSDictionary+mangas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+mangas.h"; sourceTree = "<group>"; };
+		FB68091319F4251A00B8EC75 /* NSDictionary+mangas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+mangas.m"; sourceTree = "<group>"; };
+		FB68091519F42E0200B8EC75 /* MangaListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaListTableViewCell.h; sourceTree = "<group>"; };
+		FB68091619F42E0200B8EC75 /* MangaListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaListTableViewCell.m; sourceTree = "<group>"; };
+		FB68091819F42FC700B8EC75 /* MangaListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaListTableViewController.h; sourceTree = "<group>"; };
+		FB68091919F42FC700B8EC75 /* MangaListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaListTableViewController.m; sourceTree = "<group>"; };
+		FB68091B19F43D3700B8EC75 /* MangaDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaDetailTableViewController.h; sourceTree = "<group>"; };
+		FB68091C19F43D3700B8EC75 /* MangaDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaDetailTableViewController.m; sourceTree = "<group>"; };
+		FB90D50019EAC9C6004C8E1D /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		FB90D50119EAC9C6004C8E1D /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		FB94004919F86196002A7F3E /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		FB94004A19F86196002A7F3E /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		FB94004C19F8673D002A7F3E /* NSDictionary+search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+search.h"; sourceTree = "<group>"; };
+		FB94004D19F8673D002A7F3E /* NSDictionary+search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+search.m"; sourceTree = "<group>"; };
+		FBA4272219F2E28A001B4BE4 /* StatusTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusTableViewController.h; sourceTree = "<group>"; };
+		FBA4272319F2E28A001B4BE4 /* StatusTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusTableViewController.m; sourceTree = "<group>"; };
+		FBA48CFA19EB4D5600AA0CDD /* NSDictionary+package.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+package.h"; sourceTree = "<group>"; };
+		FBA48CFB19EB4D5600AA0CDD /* NSDictionary+package.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+package.m"; sourceTree = "<group>"; };
+		FBA48CFD19EB55EC00AA0CDD /* AnimeDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimeDetailTableViewController.h; sourceTree = "<group>"; };
+		FBA48CFE19EB55EC00AA0CDD /* AnimeDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimeDetailTableViewController.m; sourceTree = "<group>"; };
+		FBA6280419EB1D1F00F1414D /* AnimeListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimeListTableViewController.h; sourceTree = "<group>"; };
+		FBA6280519EB1D1F00F1414D /* AnimeListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimeListTableViewController.m; sourceTree = "<group>"; };
+		FBA6280719EB1E7900F1414D /* AnimeListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimeListTableViewCell.h; sourceTree = "<group>"; };
+		FBA6280819EB1E7900F1414D /* AnimeListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimeListTableViewCell.m; sourceTree = "<group>"; };
+		FBA6281119EB38EF00F1414D /* NSDictionary+animes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+animes.h"; sourceTree = "<group>"; };
+		FBA6281219EB38EF00F1414D /* NSDictionary+animes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+animes.m"; sourceTree = "<group>"; };
+		FBA7C43519FAF649006585C2 /* SearchTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTabBarController.h; sourceTree = "<group>"; };
+		FBA7C43619FAF649006585C2 /* SearchTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTabBarController.m; sourceTree = "<group>"; };
+		FBA7C43919FAF770006585C2 /* AnimeSearchListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimeSearchListController.h; sourceTree = "<group>"; };
+		FBA7C43A19FAF770006585C2 /* AnimeSearchListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimeSearchListController.m; sourceTree = "<group>"; };
+		FBA7C43C19FAF781006585C2 /* MangaSearchListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaSearchListController.h; sourceTree = "<group>"; };
+		FBA7C43D19FAF781006585C2 /* MangaSearchListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaSearchListController.m; sourceTree = "<group>"; };
+		FBA7C43F19FAFD68006585C2 /* AnimeSearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimeSearchCell.h; sourceTree = "<group>"; };
+		FBA7C44019FAFD68006585C2 /* AnimeSearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimeSearchCell.m; sourceTree = "<group>"; };
+		FBA7C44219FAFD78006585C2 /* MangaSearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MangaSearchCell.h; sourceTree = "<group>"; };
+		FBA7C44319FAFD78006585C2 /* MangaSearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MangaSearchCell.m; sourceTree = "<group>"; };
+		FBF514FF19E9E33F00C8B2EE /* ic_launcher-web.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_launcher-web.png"; path = "../../../../../Downloads/ic_launcher-web.png"; sourceTree = "<group>"; };
+		FBF5150319E9E51900C8B2EE /* btnLog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnLog.png; sourceTree = "<group>"; };
+		FBF5150519E9E69B00C8B2EE /* CustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSegue.h; sourceTree = "<group>"; };
+		FBF5150619E9E69B00C8B2EE /* CustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSegue.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB298D5D19E7548D004FB967 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB298D6619E7548D004FB967 /* CoreGraphics.framework in Frameworks */,
+				FB298D6819E7548D004FB967 /* UIKit.framework in Frameworks */,
+				FB298D6419E7548D004FB967 /* Foundation.framework in Frameworks */,
+				4E55DEB43C9A438013575F2B /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB298D7E19E7548E004FB967 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB298D8319E7548E004FB967 /* XCTest.framework in Frameworks */,
+				FB298D8519E7548E004FB967 /* UIKit.framework in Frameworks */,
+				FB298D8419E7548E004FB967 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		725E8A1DC75383FC81C44FDC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62994F973F4496DFB2E551C2 /* Pods.debug.xcconfig */,
+				228BE3F15AA55A7AB5C9AC71 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB298D5719E7548D004FB967 = {
+			isa = PBXGroup;
+			children = (
+				FBF5150319E9E51900C8B2EE /* btnLog.png */,
+				FBF514FF19E9E33F00C8B2EE /* ic_launcher-web.png */,
+				FB298D6919E7548D004FB967 /* MALbile */,
+				FB298D8819E7548E004FB967 /* MALbileTests */,
+				FB298D6219E7548D004FB967 /* Frameworks */,
+				FB298D6119E7548D004FB967 /* Products */,
+				725E8A1DC75383FC81C44FDC /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		FB298D6119E7548D004FB967 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB298D6019E7548D004FB967 /* MALbile.app */,
+				FB298D8119E7548E004FB967 /* MALbileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB298D6219E7548D004FB967 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB298D6319E7548D004FB967 /* Foundation.framework */,
+				FB298D6519E7548D004FB967 /* CoreGraphics.framework */,
+				FB298D6719E7548D004FB967 /* UIKit.framework */,
+				FB298D8219E7548E004FB967 /* XCTest.framework */,
+				A421DA5DD0D3713389DF8C79 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB298D6919E7548D004FB967 /* MALbile */ = {
+			isa = PBXGroup;
+			children = (
+				FBA7C43819FAF70A006585C2 /* Search */,
+				FBA6280A19EB23FB00F1414D /* model */,
+				FB298D7219E7548D004FB967 /* AppDelegate.h */,
+				FB298D7319E7548D004FB967 /* AppDelegate.m */,
+				FB298D7519E7548D004FB967 /* Main.storyboard */,
+				FB298D7B19E7548D004FB967 /* Images.xcassets */,
+				FB298D6A19E7548D004FB967 /* Supporting Files */,
+				FBF5150519E9E69B00C8B2EE /* CustomSegue.h */,
+				FBF5150619E9E69B00C8B2EE /* CustomSegue.m */,
+				FB4087E019EAC09900713A44 /* LoginViewController.h */,
+				FB4087E119EAC09900713A44 /* LoginViewController.m */,
+				FB90D50019EAC9C6004C8E1D /* SplashViewController.h */,
+				FB90D50119EAC9C6004C8E1D /* SplashViewController.m */,
+				FBA6280419EB1D1F00F1414D /* AnimeListTableViewController.h */,
+				FBA6280519EB1D1F00F1414D /* AnimeListTableViewController.m */,
+				FBA6280719EB1E7900F1414D /* AnimeListTableViewCell.h */,
+				FBA6280819EB1E7900F1414D /* AnimeListTableViewCell.m */,
+				FBA48CFD19EB55EC00AA0CDD /* AnimeDetailTableViewController.h */,
+				FBA48CFE19EB55EC00AA0CDD /* AnimeDetailTableViewController.m */,
+				FBA4272219F2E28A001B4BE4 /* StatusTableViewController.h */,
+				FBA4272319F2E28A001B4BE4 /* StatusTableViewController.m */,
+				FB68091519F42E0200B8EC75 /* MangaListTableViewCell.h */,
+				FB68091619F42E0200B8EC75 /* MangaListTableViewCell.m */,
+				FB68091819F42FC700B8EC75 /* MangaListTableViewController.h */,
+				FB68091919F42FC700B8EC75 /* MangaListTableViewController.m */,
+				FB68091B19F43D3700B8EC75 /* MangaDetailTableViewController.h */,
+				FB68091C19F43D3700B8EC75 /* MangaDetailTableViewController.m */,
+			);
+			path = MALbile;
+			sourceTree = "<group>";
+		};
+		FB298D6A19E7548D004FB967 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB298D6B19E7548D004FB967 /* MALbile-Info.plist */,
+				FB298D6C19E7548D004FB967 /* InfoPlist.strings */,
+				FB298D6F19E7548D004FB967 /* main.m */,
+				FB298D7119E7548D004FB967 /* MALbile-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB298D8819E7548E004FB967 /* MALbileTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB298D8E19E7548E004FB967 /* MALbileTests.m */,
+				FB298D8919E7548E004FB967 /* Supporting Files */,
+			);
+			path = MALbileTests;
+			sourceTree = "<group>";
+		};
+		FB298D8919E7548E004FB967 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB298D8A19E7548E004FB967 /* MALbileTests-Info.plist */,
+				FB298D8B19E7548E004FB967 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBA6280A19EB23FB00F1414D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FBA6281119EB38EF00F1414D /* NSDictionary+animes.h */,
+				FBA6281219EB38EF00F1414D /* NSDictionary+animes.m */,
+				FBA48CFA19EB4D5600AA0CDD /* NSDictionary+package.h */,
+				FBA48CFB19EB4D5600AA0CDD /* NSDictionary+package.m */,
+				FB68091219F4251A00B8EC75 /* NSDictionary+mangas.h */,
+				FB68091319F4251A00B8EC75 /* NSDictionary+mangas.m */,
+				FB94004C19F8673D002A7F3E /* NSDictionary+search.h */,
+				FB94004D19F8673D002A7F3E /* NSDictionary+search.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		FBA7C43819FAF70A006585C2 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FB94004919F86196002A7F3E /* SearchViewController.h */,
+				FB94004A19F86196002A7F3E /* SearchViewController.m */,
+				FBA7C43519FAF649006585C2 /* SearchTabBarController.h */,
+				FBA7C43619FAF649006585C2 /* SearchTabBarController.m */,
+				FBA7C43919FAF770006585C2 /* AnimeSearchListController.h */,
+				FBA7C43A19FAF770006585C2 /* AnimeSearchListController.m */,
+				FBA7C43C19FAF781006585C2 /* MangaSearchListController.h */,
+				FBA7C43D19FAF781006585C2 /* MangaSearchListController.m */,
+				FBA7C43F19FAFD68006585C2 /* AnimeSearchCell.h */,
+				FBA7C44019FAFD68006585C2 /* AnimeSearchCell.m */,
+				FBA7C44219FAFD78006585C2 /* MangaSearchCell.h */,
+				FBA7C44319FAFD78006585C2 /* MangaSearchCell.m */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB298D5F19E7548D004FB967 /* MALbile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB298D9219E7548E004FB967 /* Build configuration list for PBXNativeTarget "MALbile" */;
+			buildPhases = (
+				357C6331E74244D261368C3F /* Check Pods Manifest.lock */,
+				FB298D5C19E7548D004FB967 /* Sources */,
+				FB298D5D19E7548D004FB967 /* Frameworks */,
+				FB298D5E19E7548D004FB967 /* Resources */,
+				298D7D13F3100385A3DA42A1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MALbile;
+			productName = MALbile;
+			productReference = FB298D6019E7548D004FB967 /* MALbile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB298D8019E7548E004FB967 /* MALbileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB298D9519E7548E004FB967 /* Build configuration list for PBXNativeTarget "MALbileTests" */;
+			buildPhases = (
+				FB298D7D19E7548E004FB967 /* Sources */,
+				FB298D7E19E7548E004FB967 /* Frameworks */,
+				FB298D7F19E7548E004FB967 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB298D8719E7548E004FB967 /* PBXTargetDependency */,
+			);
+			name = MALbileTests;
+			productName = MALbileTests;
+			productReference = FB298D8119E7548E004FB967 /* MALbileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB298D5819E7548D004FB967 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = UNISINOS;
+				TargetAttributes = {
+					FB298D8019E7548E004FB967 = {
+						TestTargetID = FB298D5F19E7548D004FB967;
+					};
+				};
+			};
+			buildConfigurationList = FB298D5B19E7548D004FB967 /* Build configuration list for PBXProject "MALbile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB298D5719E7548D004FB967;
+			productRefGroup = FB298D6119E7548D004FB967 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB298D5F19E7548D004FB967 /* MALbile */,
+				FB298D8019E7548E004FB967 /* MALbileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB298D5E19E7548D004FB967 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB298D7C19E7548D004FB967 /* Images.xcassets in Resources */,
+				FB298D6E19E7548D004FB967 /* InfoPlist.strings in Resources */,
+				FBF5150019E9E33F00C8B2EE /* ic_launcher-web.png in Resources */,
+				FBF5150419E9E51900C8B2EE /* btnLog.png in Resources */,
+				FB298D7719E7548D004FB967 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB298D7F19E7548E004FB967 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB298D8D19E7548E004FB967 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		298D7D13F3100385A3DA42A1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		357C6331E74244D261368C3F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB298D5C19E7548D004FB967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF5150719E9E69B00C8B2EE /* CustomSegue.m in Sources */,
+				FBA7C43719FAF649006585C2 /* SearchTabBarController.m in Sources */,
+				FB68091D19F43D3700B8EC75 /* MangaDetailTableViewController.m in Sources */,
+				FB94004E19F8673D002A7F3E /* NSDictionary+search.m in Sources */,
+				FB68091419F4251A00B8EC75 /* NSDictionary+mangas.m in Sources */,
+				FB68091A19F42FC700B8EC75 /* MangaListTableViewController.m in Sources */,
+				FBA7C44419FAFD78006585C2 /* MangaSearchCell.m in Sources */,
+				FB94004B19F86196002A7F3E /* SearchViewController.m in Sources */,
+				FB298D7419E7548D004FB967 /* AppDelegate.m in Sources */,
+				FBA7C43E19FAF781006585C2 /* MangaSearchListController.m in Sources */,
+				FBA48CFC19EB4D5600AA0CDD /* NSDictionary+package.m in Sources */,
+				FBA6280619EB1D1F00F1414D /* AnimeListTableViewController.m in Sources */,
+				FBA7C43B19FAF770006585C2 /* AnimeSearchListController.m in Sources */,
+				FB68091719F42E0200B8EC75 /* MangaListTableViewCell.m in Sources */,
+				FBA7C44119FAFD68006585C2 /* AnimeSearchCell.m in Sources */,
+				FBA4272419F2E28A001B4BE4 /* StatusTableViewController.m in Sources */,
+				FBA6280919EB1E7900F1414D /* AnimeListTableViewCell.m in Sources */,
+				FBA48CFF19EB55EC00AA0CDD /* AnimeDetailTableViewController.m in Sources */,
+				FBA6281319EB38EF00F1414D /* NSDictionary+animes.m in Sources */,
+				FB298D7019E7548D004FB967 /* main.m in Sources */,
+				FB4087E219EAC09900713A44 /* LoginViewController.m in Sources */,
+				FB90D50219EAC9C6004C8E1D /* SplashViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB298D7D19E7548E004FB967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB298D8F19E7548E004FB967 /* MALbileTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB298D8719E7548E004FB967 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB298D5F19E7548D004FB967 /* MALbile */;
+			targetProxy = FB298D8619E7548E004FB967 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB298D6C19E7548D004FB967 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB298D6D19E7548D004FB967 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FB298D7519E7548D004FB967 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB298D7619E7548D004FB967 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB298D8B19E7548E004FB967 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB298D8C19E7548E004FB967 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB298D9019E7548E004FB967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FB298D9119E7548E004FB967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB298D9319E7548E004FB967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62994F973F4496DFB2E551C2 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MALbile/MALbile-Prefix.pch";
+				INFOPLIST_FILE = "MALbile/MALbile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FB298D9419E7548E004FB967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 228BE3F15AA55A7AB5C9AC71 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MALbile/MALbile-Prefix.pch";
+				INFOPLIST_FILE = "MALbile/MALbile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FB298D9619E7548E004FB967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MALbile.app/MALbile";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MALbile/MALbile-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MALbileTests/MALbileTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FB298D9719E7548E004FB967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MALbile.app/MALbile";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MALbile/MALbile-Prefix.pch";
+				INFOPLIST_FILE = "MALbileTests/MALbileTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB298D5B19E7548D004FB967 /* Build configuration list for PBXProject "MALbile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB298D9019E7548E004FB967 /* Debug */,
+				FB298D9119E7548E004FB967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB298D9219E7548E004FB967 /* Build configuration list for PBXNativeTarget "MALbile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB298D9319E7548E004FB967 /* Debug */,
+				FB298D9419E7548E004FB967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB298D9519E7548E004FB967 /* Build configuration list for PBXNativeTarget "MALbileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB298D9619E7548E004FB967 /* Debug */,
+				FB298D9719E7548E004FB967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB298D5819E7548D004FB967 /* Project object */;
+}
